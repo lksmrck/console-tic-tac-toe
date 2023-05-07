@@ -4,7 +4,7 @@ namespace TicTacToe
 	public class Field
 	{
 
-		public char[][] PlayingField { get; private set; }
+		public char[][] PlayingField { get; set; }
 		public int FieldResolution { get; private set; }
 
 
@@ -28,7 +28,7 @@ namespace TicTacToe
 
 				for (int j = 0; j < fieldResolution; j++)
 				{
-					field[i][j] = 'X';
+					field[i][j] = ' ';
 				}
 
 			}
@@ -39,6 +39,7 @@ namespace TicTacToe
 
 		public void PrintField()
 		{
+			// TODO: prizpusobit dynamicky pro zadanou velikost pole
 			Console.WriteLine(" |1|2|3|");
 			for (int i = 0;  i < FieldResolution;  i++)
 			{
