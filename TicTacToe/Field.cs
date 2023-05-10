@@ -37,6 +37,8 @@ namespace TicTacToe
 
 		}
 
+		
+
 		public void PrintField()
 		{
 			// TODO: prizpusobit dynamicky pro zadanou velikost pole

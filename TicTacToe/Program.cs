@@ -22,6 +22,10 @@ int row, col;
 
 currentPlayer.GetPlayerMove(out col, out row);
 
+while (row > 2 || row < 0 || col > 2 || col < 0 || field.PlayingField[col][row] != ' ')
+        currentPlayer.GetPlayerMove(out col, out row);
+
+
 field.PlayingField[col][row] = currentPlayer.C;
 
 field.PrintField();
